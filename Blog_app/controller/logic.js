@@ -2,6 +2,7 @@ const knex=require("../model/db")
 const jwt=require('jsonwebtoken')
 const cookie=require('cookie-parser')
 const bcrypt=require('bcrypt')
+
 const signup=(req,res)=>{
     if (!req.body.username || !req.body.email || !req.body.password){
         res.status(400)

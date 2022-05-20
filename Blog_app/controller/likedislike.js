@@ -9,8 +9,7 @@ const likedislike=(req,res)=>{
         }else{
             knex('likeDislike').insert({
                 post_id:req.body.post_id,
-                user_id:req.userData.id,
-                like:req.body.like,
+                user_id                like:req.body.like,
                 dislike:req.body.dislike
 
             })
